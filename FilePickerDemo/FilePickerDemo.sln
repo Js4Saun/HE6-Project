@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilePickerDemo.Android", "FilePickerDemo\FilePickerDemo.Android\FilePickerDemo.Android.csproj", "{F9D05E72-CBD4-4951-B515-4076E2985F90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilePickerDemo", "FilePickerDemo\FilePickerDemo\FilePickerDemo.csproj", "{D2BF5B8B-9942-437A-A864-44A51A2886F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9D05E72-CBD4-4951-B515-4076E2985F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D05E72-CBD4-4951-B515-4076E2985F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D05E72-CBD4-4951-B515-4076E2985F90}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F9D05E72-CBD4-4951-B515-4076E2985F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D05E72-CBD4-4951-B515-4076E2985F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9D05E72-CBD4-4951-B515-4076E2985F90}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D2BF5B8B-9942-437A-A864-44A51A2886F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BF5B8B-9942-437A-A864-44A51A2886F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BF5B8B-9942-437A-A864-44A51A2886F2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D2BF5B8B-9942-437A-A864-44A51A2886F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BF5B8B-9942-437A-A864-44A51A2886F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BF5B8B-9942-437A-A864-44A51A2886F2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C468773-10DD-4EE9-9209-67E5726ECABD}
+	EndGlobalSection
+EndGlobal

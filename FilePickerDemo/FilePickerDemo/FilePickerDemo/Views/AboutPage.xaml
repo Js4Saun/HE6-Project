@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FilePickerDemo.Views.AboutPage"
+             xmlns:vm="clr-namespace:FilePickerDemo.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <RelativeLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+        <Grid VerticalOptions="FillAndExpand">
+            <Image x:Name="Background" Source="Computing.jpg" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" IsVisible="true" VerticalOptions="FillAndExpand" Aspect="AspectFill" HeightRequest="620"/>
+
+            <ScrollView Orientation="Horizontal" Padding="{OnPlatform Android='30,60,30,30', Default='30'}">
+                <Grid RowSpacing="5" RowDefinitions="Auto,Auto,Auto" VerticalOptions="FillAndExpand">
+
+                    <Frame BackgroundColor="{StaticResource Primary}" HasShadow="True" Padding="5" CornerRadius="0" Grid.Row="0">
+                        <Image x:Name="Logo" Source="logo_app2.jpg" IsVisible="true" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="390" WidthRequest="310"/>
+                    </Frame>
+
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </RelativeLayout>
+
+
+</ContentPage>

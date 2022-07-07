@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FilePickerDemo.Views.BasicsPage">
+    <ContentPage.Content>
+        <RelativeLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Grid VerticalOptions="FillAndExpand">
+                <Image x:Name="Background" Source="Computing.jpg" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" IsVisible="true" VerticalOptions="FillAndExpand" Aspect="AspectFill"/>
+                <StackLayout>
+                    <Label Text="Pick a Page" TextColor="White"
+                   FontSize="Large"/>
+
+                    <Image x:Name="imgFile" WidthRequest="200" HeightRequest="200"></Image>
+                    <Label x:Name="fileName" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"></Label>
+
+                    <Button Text="Temp Conversion" Clicked="Button_Clicked"></Button>
+                    
+
+                    <CollectionView x:Name="cvImage">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame CornerRadius="20" BorderColor="DarkGray">
+                                    <Image Source="{Binding .}" WidthRequest="100" HeightRequest="100"></Image>
+
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+            </Grid>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>
